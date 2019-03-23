@@ -13,8 +13,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         doLogout: () => {
-            firebase.auth().signOut()
-            dispatch(logOut())
+            if (window.confirm("are you logout?")){
+                firebase.auth().signOut()
+                dispatch(logOut())
+            } else {
+                return
+            }
         }
     }
 }
