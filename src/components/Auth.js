@@ -1,18 +1,19 @@
 import React from "react"
+import Button from "@material-ui/core/Button"
 
 export default class Auth extends React.Component {
     
-    constructor(props) {
-        super(props)
-    }
-
     componentDidMount() {
         this.props.refLogin()
     }
     render() {
         return (
             <div>
-                <button onClick={this.props.doLogin}>Login</button>
+                <Button
+                    onClick={this.props.doLogin}
+                    variant="contained"
+                    color="primary"
+                >Google Login</Button>
             </div>
         )
     }

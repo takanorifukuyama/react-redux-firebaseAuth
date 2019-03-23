@@ -1,4 +1,4 @@
-import firebase from 'firebase'
+// import firebase from 'firebase'
 import { connect } from 'react-redux'
 import App from '../components/App'
 
