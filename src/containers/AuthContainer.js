@@ -2,7 +2,8 @@ import firebase from "firebase"
 import { connect } from "react-redux"
 import Auth from "../components/Auth"
 import { loginOk } from "../actions/auth"
-
+import { firAuth } from "../firebase"
+ 
 const mapStateToProps = (state) => {
     return {
         isAuth: state.isAuth,
@@ -14,11 +15,11 @@ const mapDispatchToProps = (dispatch) => {
         // display login pop-up (only)
         doLogin: () => {
             let provider = new firebase.auth.GoogleAuthProvider()
-            firebase.auth().signInWithPopup(provider)
+            firAuth.signInWithPopup(provider)
         },
         // change loginCondition in firebase -> change loginCondition in redux 
         refLogin: () => {
-            firebase.auth().onAuthStateChanged(user => {
+            firAuth.onAuthStateChanged(user => {
                 if (!user) {
                     return
                 }

@@ -3,7 +3,7 @@ import '../App.css';
 
 import UserInfoContainer from '../containers/UserInfoContainer'
 import AuthContainer from '../containers/AuthContainer'
-import { firebaseApp } from '../firebase' //これ必要らしい
+//import { firebaseApp } from '../firebase' //これ必要らしい
 
 class App extends Component {
   
