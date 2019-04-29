@@ -71,3 +71,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 Ref
 https://qiita.com/HorieH/items/8b4b1c4807e1eb6fcb0a
 https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/page-layout-examples/sign-in
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8d184d3-6098-4790-a4d7-498c61465d15/deploy-status)](https://app.netlify.com/sites/brave-hopper-b498eb/deploys)
