@@ -1,8 +1,9 @@
+   // Initialize Firebase
 export const config = {
-    apiKey: "AIzaSyDzIsv_AMuO1sY9O2r3b4sOnPYA1h4bGgg",
-    authDomain: "freeworks-9bb68.firebaseapp.com",
-    databaseURL: "https://freeworks-9bb68.firebaseio.com",
-    projectId: "freeworks-9bb68",
-    storageBucket: "freeworks-9bb68.appspot.com",
-    messagingSenderId: "636066987238"
+apiKey: "AIzaSyB81IJx_bK3d4p1Oa8Ruyd12K1vuqcK0Xc",
+authDomain: "react-firebase-todo-190e4.firebaseapp.com",
+databaseURL: "https://react-firebase-todo-190e4.firebaseio.com",
+projectId: "react-firebase-todo-190e4",
+storageBucket: "react-firebase-todo-190e4.appspot.com",
+messagingSenderId: "373129575730"
 };

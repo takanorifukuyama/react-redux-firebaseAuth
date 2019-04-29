@@ -2,6 +2,7 @@ const initialState = {
     uid: null,
     displayName: null,
     email: null,
+    photoURL: null,
 }
 
 const auth = (state=initialState, action) => {
@@ -11,6 +12,7 @@ const auth = (state=initialState, action) => {
                 uid: action.payload.uid,
                 displayName: action.payload.displayName,
                 email: action.payload.email,
+                photoURL: action.payload.photoURL,
             })
         }
         case "LOGOUT": {
@@ -18,6 +20,7 @@ const auth = (state=initialState, action) => {
                 uid: null,
                 displayName: null,
                 email: null,
+                photoURL: null,
             })
         }
         default: {

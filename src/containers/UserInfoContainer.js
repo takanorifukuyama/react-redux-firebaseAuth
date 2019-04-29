@@ -3,14 +3,15 @@ import { connect } from "react-redux"
 import { logOut } from "../actions/auth"
 import UseInfo from "../components/UserInfo"
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         uid: state.auth.uid,
         displayName: state.auth.displayName,
+        photoURL: state.auth.photoURL,
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
     return {
         doLogout: () => {
             if (window.confirm("are you logout?")){
