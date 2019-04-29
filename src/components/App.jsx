@@ -11,6 +11,13 @@ class App extends Component {
     return (
       <div className="App">
         { this.props.uid? <UserInfoContainer /> : <AuthContainer /> }
+        {/* {() =>{
+          if(this.props.uid){
+            return <UserInfoContainer />
+          }else{
+            return <AuthContainer />
+          }
+        }} */}
       </div>
     );
   }
